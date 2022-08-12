@@ -50,6 +50,22 @@ body {
   color: var(--studio);
 }
 
+.current {
+  position: relative;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
 .web {
   color: var(--accent-color);
 }
@@ -132,6 +148,7 @@ body {
   padding-bottom: 32px;
 
   color: var(--main-title-color);
+  transition: color 250ms linear;
 }
 
 .current {
